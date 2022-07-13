@@ -330,16 +330,44 @@
 <!-- //Footer -->
 
 	<!-- Custom-JavaScript-File-Links -->
-	<!-- Supportive-JavaScript -->
-	<script type="text/javascript" src="vendors/js/jquery.min.js"></script>
-	<!-- Necessary-JS-File-For-Bootstrap -->
-	<script type="text/javascript" src="vendors/js/bootstrap.min.js"></script>
+        <!-- Supportive-JavaScript -->
+    <script type="text/javascript" src="vendors/js/jquery.min.js"></script>
+    <!-- Necessary-JS-File-For-Bootstrap -->
+    <script type="text/javascript" src="vendors/js/bootstrap.min.js"></script>
 
-	<!-- Banner-Slider-JavaScript -->
-	<script src="vendors/js/responsiveslides.min.js"></script>
+                    <!-- DESPLAZAMIENTO HACIA ARRIBA -->
+    <!-- Slide-To-Top JavaScript (No-Need-To-Change) -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 100,
+                easingType: 'linear'
+            };
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+        });
+    </script>
+    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 0;"> </span></a>
+    <!-- //Slide-To-Top JavaScript -->
 
-	<!-- Slide-To-Top JavaScript (No-Need-To-Change) -->
-	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 0;"> </span></a>
-	<!-- //Slide-To-Top JavaScript -->
-	<!-- Smooth-Scrolling-JavaScript -->
+    <!-- Smooth-Scrolling-JavaScript -->
+    <script type="text/javascript" src="vendors/js/move-top.js"></script>
+    <script type="text/javascript" src="vendors/js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll, .navbar li a, .footer li a").click(function(event) {
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+        <!-- //Smooth-Scrolling-JavaScript -->
+                        <!-- ! END DESPLAZAMIENTO HACIA ARRIBA -->
+
+	<!-- //Custom-JavaScript-File-Links -->
+
 </html>

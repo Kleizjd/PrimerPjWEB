@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form action="Update_Afiliado.php" method="post">
+    <form action="../controllers/Update_Afiliado.php" method="post">
         <h2><strong><em>Actualiza Datos Básicos Cotizante</em></strong></h2>
         DOCUMENTO: <input type="text" name="documento"><br> <input type="submit" value="Buscar">
         <br /> <br />

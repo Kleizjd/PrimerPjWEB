@@ -84,7 +84,7 @@ img{
     padding: 1em 0 1em;
 }	
 .agile-voltsub {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
 	background: rgba(29, 28, 27, 0.76);
 	box-sizing: border-box;
@@ -224,12 +224,12 @@ footer a{
 }
 @media(max-width:1440px){
 	.agile-voltsub {
-		width: 45%;
+		width: 65%;
 	}
 }
-@media(max-width:1366px){
+@media(max-width:1366px){/* size form */
 	.agile-voltsub {
-		width: 50%;
+		width: 70%;
 	}
 }
 @media(max-width:1280px){
